@@ -1,48 +1,12 @@
-# Devon Villalona
-# For the my integration project I will have a combination code that displays what i learned in this class.
-# The user will enter their name to begin the program and enter two integers after.
-# After the user inputs the two integers,
-# then the user has a choice to use the following numeric operators to get the final result.
-
+__author__ = "Devon Villalona"
+"""For the my integration project I will have a combination code that displays what i learned in this class.
+The user will enter their name to begin the program and enter two integers after.
+After the user inputs the two integers,
+then the user has a choice to use the following numeric operators to get the final result. """
 print('Hello there!', sep=' ')
-print('Enter your name to to begin!',  end='\n')
+print('Enter your name to to begin!', end='\n')
 name = input()
-print("Welcome, "+name+'!')  # Sting operator that uses the input name and combines it
-
-
-def add_numbers(num1, num2):
-    print(num1, "+", num2, "=", num1 + num2)    # This prints num1 and num 2 with a + sign and = sign.
-# Also adds both integers
-
-
-def subtract_numbers(num1, num2):
-    print(num1, "-", num2, "=", num1 - num2)    # This prints num1 and num 2 with a - sign and = sign.
-# Also subtracts both integers.
-
-
-def divide_numbers(num1, num2):
-    print(num1, "/", num2, "=", num1 / num2)    # This prints num1 and num 2 with a / sign and = sign.
-# Also divides both integers.
-
-
-def modulus_numbers(num1, num2):
-    print(num1, "%", num2, "=", num1 % num2)    # This prints num1 and num 2 with a % sign and = sign.
-# Uses the modulus on both integers.
-
-
-def floor_division(num1, num2):
-    print(num1, "//", num2, "=", num1 // num2)  # This prints num1 and num 2 with a // sign and = sign.
-# Also uses floor division on both integers
-
-
-def multiply_numbers(num1, num2):
-    print(num1, "*", num2, "=", num1 * num2)    # This prints num1 and num 2 with a * sign and = sign.
-# Also multiply both integers
-
-
-def exponent(num1, num2):
-    print(num1, "**", num2, "=", num1 ** num2)  # This prints num1 and num 2 with a ** sign and = sign.
-# Also uses the Exponentiation of both integer
+print("Welcome, " + name + '!')  # Sting operator that uses the input name and combines it
 
 
 def main():
@@ -72,7 +36,80 @@ def main():
         exponent(first_number, second_number)
 
 
+def add_numbers(num1, num2):
+    """This prints num1 and num 2 with a + sign and = sign.
+    Also adds both integers. """
+    print(num1, "+", num2, "=", num1 + num2)
+
+
+print("Using help:")
+help(add_numbers)
+
+
+def subtract_numbers(num1, num2):
+    """ This prints num1 and num 2 with a - sign and = sign.
+    Also subtracts both integers. """
+
+    print(num1, "-", num2, "=", num1 - num2)
+
+
+print("Using help:")
+help(subtract_numbers)
+
+
+def divide_numbers(num1, num2):
+    """ This prints num1 and num 2 with a / sign and = sign.
+    Also divides both integers. """
+
+    print(num1, "/", num2, "=", num1 / num2)
+
+
+print("Using help:")
+help(divide_numbers)
+
+
+def modulus_numbers(num1, num2):
+    """ This prints num1 and num 2 with a % sign and = sign.
+    Uses the modulus on both integers. """
+    print(num1, "%", num2, "=", num1 % num2)
+
+
+print("Using help:")
+help(modulus_numbers)
+
+
+def floor_division(num1, num2):
+    """This prints num1 and num 2 with a // sign and = sign.
+    Also uses floor division on both integers. """
+    print(num1, "//", num2, "=", num1 // num2)
+
+
+print("Using help:")
+help(floor_division)
+
+
+def multiply_numbers(num1, num2):
+    """This prints num1 and num 2 with a * sign and = sign.
+    Also multiply both integers. """
+    print(num1, "*", num2, "=", num1 * num2)
+
+
+print("Using help:")
+help(multiply_numbers)
+
+
+def exponent(num1, num2):
+    """This prints num1 and num 2 with a ** sign and = sign.
+    Also uses the Exponentiation of both integer."""
+    print(num1, "**", num2, "=", num1 ** num2)
+
+
+print("Using help:")
+help(exponent)
+
+
 main()
+
 # https://realpython.com/python-range/ source that helped me with this code.
 print("Now lets make a range counter!")  # This is a range counter that inputs two integers and will have it display,
 # the numbers in between.
@@ -110,7 +147,7 @@ miles = 1
 
 if not current_run == '1':
     print("Go run more!")
-while current_run < running_goal:  
+while current_run < running_goal:
     current_run += current_run * 0.1
     miles += 1
 
